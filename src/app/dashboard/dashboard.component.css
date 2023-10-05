@@ -1,0 +1,23 @@
+.filter-button {
+  background-color: white;
+  color: grey;
+  width: 125px;
+}
+
+.filter-button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.new-task {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.btn-secondary {
+  border-color: lightgray;
+}
+.btn-secondary:hover {
+  border-color: grey;
+}

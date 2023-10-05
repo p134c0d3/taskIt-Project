@@ -1,1 +1,76 @@
-<p>dashboard works!</p>
+<div class="container vh-100 mt-5">
+  <div class="new-task">
+    <div class="h1">Task List</div>
+    <button class="btn btn-success" style="min-width: 150px; border-radius: 10px; max-height: 40px;">New Task</button>
+  </div>
+  <div class="d-flex inline-flex ml-2 mt-3">
+    <h5>Filters:</h5>
+    <div class="btn-group">
+      <button
+        class="btn btn-secondary btn-sm dropdown-toggle ml-3 filter-button"
+        type="button"
+        data-toggle="dropdown"
+        aria-expanded="false"
+        (click)="isStatusExpanded = !isStatusExpanded"
+      >
+        Status
+      </button>
+      <div
+        class="dropdown-menu dropdown-menu-right"
+        [class.show]="isStatusExpanded"
+      >
+        <a
+          href="#"
+          class="dropdown-item"
+          (click)="isStatusExpanded = !isStatusExpanded"
+          >Example</a
+        >
+      </div>
+    </div>
+    <div class="btn-group">
+      <button
+        class="btn btn-secondary btn-sm dropdown-toggle ml-3 filter-button"
+        type="button"
+        data-toggle="dropdown"
+        aria-expanded="false"
+        (click)="isDateExpanded = !isDateExpanded"
+      >
+        Date
+      </button>
+      <div
+        class="dropdown-menu dropdown-menu-right"
+        [class.show]="isDateExpanded"
+      >
+        <a
+          href="#"
+          class="dropdown-item"
+          (click)="isDateExpanded = !isDateExpanded"
+          >Example</a
+        >
+      </div>
+    </div>
+    <div class="btn-group">
+      <button
+        class="btn btn-secondary btn-sm dropdown-toggle ml-3 filter-button"
+        type="button"
+        data-toggle="dropdown"
+        aria-expanded="false"
+        (click)="isPriorityExpanded = !isPriorityExpanded"
+      >
+        Priority
+      </button>
+      <div
+        class="dropdown-menu dropdown-menu-right"
+        [class.show]="isPriorityExpanded"
+      >
+        <a
+          href="#"
+          class="dropdown-item"
+          (click)="isPriorityExpanded = !isPriorityExpanded"
+          >Example</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-flex justify-content-around"></div>
