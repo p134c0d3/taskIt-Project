@@ -22,24 +22,24 @@
   border-color: grey;
 }
 
-.t-header {
-  color: lightgray;
-}
+/* table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse !important;
+  border: 1px solid lightgray;
+  height: auto;
+  display: table;
+} */
 
 .task-table {
   border: 1px solid lightgray;
   border-collapse: separate !important;
   border-radius: 10px;
-  display:grid;
-}
-thead>td {
+  display:table;
+  min-width: 100%
 }
 
 .table-row {
   justify-content: space-between;
 }
 
-/* .status-button::after {
-  position:fixed;
-  offset: 2px right;
-} */
