@@ -25,3 +25,8 @@
 .t-header {
   color: lightgray;
 }
+
+.task-table {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
