@@ -9,4 +9,6 @@ export class DashboardComponent {
   isStatusExpanded: boolean = false;
   isDateExpanded: boolean = false;
   isPriorityExpanded: boolean = false;
+  createNewTask:boolean = false
 }
+
